@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">AccountFigma</string>
+    <string name="share">Поделиться</string>
+    <string name="id_123_456_789">ID 123 456 789</string>
+    <string name="alice_peterson">Alice Peterson</string>
+    <string name="_4_7">4.7</string>
+    <string name="questionnaires">QUESTIONNAIRES</string>
+    <string name="people">PEOPLE</string>
+    <string name="about_me">About me</string>
+    <string name="dream_and_get">Dream and get</string>
+    <string name="new_york_usa">New York, USA</string>
+    <string name="russia_english_german">Russia, English, German</string>
+    <string name="choose">Choose</string>
+    <string name="wishes">WISHES</string>
+    <string name="moments">Moments</string>
+    <string name="chronicles">Chronicles</string>
 </resources>
