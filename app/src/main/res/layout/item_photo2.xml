@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    app:cardCornerRadius="@dimen/corner_radius_photo">
+    app:cardCornerRadius="4dp">
 
 
     <ImageView
@@ -12,12 +12,13 @@
         android:layout_height="0dp"
         android:paddingStart="2dp"
         android:paddingEnd="2dp"
-        app:layout_constraintDimensionRatio="H,3:4"
+        app:layout_constraintDimensionRatio="H,1:2"
+        android:background="@color/black_500"
+        android:src="@drawable/photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/photo1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

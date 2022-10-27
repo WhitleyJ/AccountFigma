@@ -17,12 +17,10 @@
                 android:id="@+id/text_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="52dp"
-                android:text="@string/id_123_456_789"
-                android:textColor="?attr/colorOnPrimary"
-                android:textSize="20dp"
+                android:layout_marginStart="56dp"
+                style="@style/toolbar_text"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/image_more"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.517" />
 

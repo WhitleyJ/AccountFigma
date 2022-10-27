@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size48">48dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_margin_rc_view_photo">4dp</dimen>
+    <dimen name="default_rc_chronicles_item_margin">5dp</dimen>
+    <dimen name="default_profile_size">160dp</dimen>
+    <dimen name="small_margin">12dp</dimen>
+    <dimen name="list_margin">10dp</dimen>
+    <dimen name="default_rcView_margin">18dp</dimen>
+    <dimen name="big_margin">24dp</dimen>
+    <dimen name="corner_radius_photo">4dp</dimen>
+</resources>

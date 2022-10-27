@@ -2,17 +2,108 @@
     <!-- Base application theme. -->
     <style name="Theme.AccountFigma" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#831C1B1B</item>
-        <item name="colorPrimaryVariant">#1A191A</item>
+        <item name="colorPrimary">@color/black_500</item>
+        <item name="colorPrimaryVariant">@color/black_200</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorAccent">@color/violet</item>
         <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/violet</item>
+        <item name="colorSecondaryVariant">@color/white_60</item>
+        <item name="colorOnSecondary">@color/white_60</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="editTextStyle">
+            @style/editTextStyle
+        </item>
     </style>
 
     <style name="MyHintStyle" parent="@android:style/TextAppearance">
         <item name="android:textColor">@color/violet</item>
     </style>
+
+    <style name="textViewRating">
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="android:textColor">#DEFFFFFF</item>
+        <item name="fontFamily">@font/inter</item>
+
+    </style>
+
+    <style name="alice_peterson">
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:translationY">-1.11sp</item>
+        <item name="android:textColor">#DEFFFFFF</item>
+        <item name="fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="title_language">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.025</item>
+        <item name="android:textColor">@color/color_more</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
+    <style name="choose_language">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#9575CD</item>
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:translationY">-0.53sp</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+
+    </style>
+
+    <style name="dream_subtitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#DEFFFFFF</item>
+        <item name="fontFamily">@font/inter</item>
+
+    </style>
+
+    <style name="moments_chronicles">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/violet</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="android:translationY">-0.53sp</item>
+
+    </style>
+    //изменить
+    <style name="editTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
+
+    <style name="toolbar_text">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/button_text_white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:text">@string/id_123_456_789</item>
+    </style>
+    
+    <style name="custom_btn" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/grey</item>
+        <item name="strokeColor">@color/violet</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:textColor">@color/button_text_white</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:lineSpacingExtra">-1sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="text_counter">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/color_share</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
 </resources>

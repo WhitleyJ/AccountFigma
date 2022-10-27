@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="black_200">#1C1B1B</color>
-    <color name="black_500">#1A191A</color>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black_200">#000000</color>
+    <color name="black_500">#121212</color>
     <color name="white">#FFFFFF</color>
-    <color name="grey">#353535</color>
-    <color name="violet">#9C27B0</color>
+    <color name="white_60">#9AFFFFFF</color>
+    <color name="grey">#17FFFFFF</color>
+    <color name="violet">#9575CD</color>
+    <color name="white_38">#61FFFFFF</color>
+
+    <color name="boarders_white">#FFFFFFDE</color>
+    <color name="button_text_white">#DEFFFFFF</color>
+    <color name="button_text">#DADADA</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#9AFFFFFF</color>
+
+    <color name="color_share">#99FFFFFF</color>
+    <color name="color_more">#DEFFFFFF</color>
+
+
+
 
 </resources>

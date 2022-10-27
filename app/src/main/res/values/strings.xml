@@ -4,8 +4,8 @@
     <string name="id_123_456_789">ID 123 456 789</string>
     <string name="alice_peterson">Alice Peterson</string>
     <string name="_4_7">4.7</string>
-    <string name="questionnaires">QUESTIONNAIRES</string>
-    <string name="people">PEOPLE</string>
+    <string name="questionnaires">Questionnaires</string>
+    <string name="people">People</string>
     <string name="about_me">About me</string>
     <string name="dream_and_get">Dream and get</string>
     <string name="new_york_usa">New York, USA</string>
@@ -14,4 +14,6 @@
     <string name="wishes">WISHES</string>
     <string name="moments">Moments</string>
     <string name="chronicles">Chronicles</string>
+    <string name="_50_300">50/300</string>
+    <string name="quote">Жизнь будет гораздо проще и приятнее для каждого человека, если мы будем</string>
 </resources>
