@@ -3,17 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/default_rc_chronicles_item_margin"
-    android:elevation="4dp">
+    android:layout_marginEnd="@dimen/default_rc_chronicles_item_margin">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:backgroundTint="@color/white_60"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white_60"
+
+        android:scaleType="centerCrop"
         android:src="@drawable/photo1"
+        app:shapeAppearanceOverlay="@style/ImageCorners"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="4:4"
-        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

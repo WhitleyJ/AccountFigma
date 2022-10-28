@@ -27,6 +27,5 @@ class MainActivity : AppCompatActivity() {
             recyclerMoments.adapter = adapterMoments
             recyclerChronicles.adapter = adapterChronicles
         }
-
     }
 }

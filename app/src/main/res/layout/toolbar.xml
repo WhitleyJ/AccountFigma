@@ -19,6 +19,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="56dp"
                 style="@style/toolbar_text"
+                android:lineSpacingExtra="2sp"
+                android:translationY="-1.11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
