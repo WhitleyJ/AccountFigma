@@ -4,8 +4,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import javax.inject.Inject
 
-abstract class BaseAdapter(private val layout: Int, private val list: List<*>) :
+abstract class BaseAdapter(private val layout: Int, val list: List<*>) :
     RecyclerView.Adapter<BaseAdapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view)
 

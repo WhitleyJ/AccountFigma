@@ -5,7 +5,7 @@ import com.account.accountfigma.domain.model.User
 
 class DiffCallback(
     var oldList: List<User>,
-    var newList: List<User>,
+    var newList: List<User>
 ) : DiffUtil.Callback() {
     override fun getOldListSize(): Int {
         return oldList.size

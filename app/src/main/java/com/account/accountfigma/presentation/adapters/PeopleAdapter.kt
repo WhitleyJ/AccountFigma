@@ -2,6 +2,7 @@ package com.account.accountfigma.presentation.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.account.accountfigma.R
@@ -18,15 +19,9 @@ class PeopleAdapter : RecyclerView.Adapter<PeopleAdapter.PeopleViewHolder>() {
     class PeopleViewHolder(val binding: UserItemBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PeopleViewHolder {
-        val binding = UserItemBinding.inflate(LayoutInflater.from(parent.context
-        ), parent, false)
+        val binding = UserItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return PeopleViewHolder(binding)
     }
-
-    override fun getItemCount(): Int {
-        return listUser.size
-    }
-
 
     override fun onBindViewHolder(holder: PeopleViewHolder, position: Int) {
         val item = listUser[position]
@@ -34,23 +29,26 @@ class PeopleAdapter : RecyclerView.Adapter<PeopleAdapter.PeopleViewHolder>() {
             Glide.with(imageUser.context).load(item.image).centerCrop().placeholder(R.drawable.img)
                 .into(imageUser)
             textName.text = item.name
+            changeState(item)
             subscribesBtn.setOnClickListener {
                 onClick?.invoke(item)
-                subscribesBtn.text = if(item.enabled){
-                    SUBSCRIBE.toString()
-                }else{
-                    UNSUBSCRIBE.toString()
-                }
+                changeState(item)
             }
         }
     }
 
-    override fun getItemViewType(position: Int): Int {
-        val item = listUser[position]
-        return when (item.enabled){
-            true->{SUBSCRIBE}
-            false->{UNSUBSCRIBE}
+    private fun UserItemBinding.changeState(item: User) {
+        if (item.subscribed) {
+            subscribesBtn.text = SUBSCRIBE
+            subscribesBtn.setTextColor(ContextCompat.getColor(root.context, R.color.violet))
+        } else {
+            subscribesBtn.text = UNSUBSCRIBE
+            subscribesBtn.setTextColor(ContextCompat.getColor(root.context, R.color.color_share))
         }
+    }
+
+    override fun getItemCount(): Int {
+        return listUser.size
     }
 
     fun setData(newList: List<User>) {
@@ -61,7 +59,8 @@ class PeopleAdapter : RecyclerView.Adapter<PeopleAdapter.PeopleViewHolder>() {
     }
 
     companion object {
-        private const val SUBSCRIBE = 1
-        private const val UNSUBSCRIBE = 2
+        private const val SUBSCRIBE = "Subscribe"
+        private const val UNSUBSCRIBE = "Unsubscribe"
     }
+
 }

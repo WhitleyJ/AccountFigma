@@ -7,7 +7,8 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/black_500">
 
         <include layout="@layout/toolbar" />
     </com.google.android.material.appbar.AppBarLayout>
@@ -24,7 +25,7 @@
             android:id="@+id/constraint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
+            android:background="@color/black_500"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/include">
@@ -175,12 +176,12 @@
                     android:layout_width="@dimen/size48"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/questionnaires" />
+                    android:text="@string/questionnaires"/>
 
                 <Space
                     android:id="@+id/spacer"
                     android:layout_width="8dp"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/button_people"
@@ -188,36 +189,34 @@
                     android:layout_width="@dimen/size48"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/people" />
+                    android:text="@string/people"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputLayout"
+                style="@style/TextInputEditTextLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/default_margin"
                 android:layout_marginTop="2dp"
                 android:hint="@string/about_me"
-
-                android:textColorHint="@color/color_share"
-                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
-                app:boxStrokeWidth="1dp"
                 app:counterEnabled="true"
+                app:boxBackgroundColor="@color/black_500"
                 app:counterMaxLength="300"
-                app:counterTextColor="@color/color_share"
-                app:hintTextColor="@color/color_share"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linear_layout">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textEdit"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="?attr/colorPrimary"
                     android:inputType="textMultiLine"
+                    android:foregroundTint="@color/violet"
                     android:maxLength="300"
+                    android:imeOptions="actionDone"
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
                     android:textAppearance="@style/editTextStyle"
@@ -315,6 +314,7 @@
                 android:layout_marginStart="@dimen/default_margin"
                 android:layout_marginTop="@dimen/list_margin"
                 android:layout_marginEnd="@dimen/default_margin"
+                android:overScrollMode="never"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="3:4"

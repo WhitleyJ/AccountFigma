@@ -12,6 +12,8 @@
     <color name="button_text_white">#DEFFFFFF</color>
     <color name="button_text">#DADADA</color>
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#9AFFFFFF</color>
+    <color name="mtrl_textinput_active_box_stroke_color" tools:override="false">@color/violet</color>
     <color name="color_share">#99FFFFFF</color>
     <color name="color_more">#DEFFFFFF</color>
+    <color name="divider_color">#1AFFFFFF</color>
 </resources>

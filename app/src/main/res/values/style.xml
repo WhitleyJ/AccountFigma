@@ -45,7 +45,7 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/button_text_white</item>
         <item name="fontFamily">@font/inter</item>
-        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:lineSpacingExtra">5sp</item>
 
     </style>
 
@@ -72,7 +72,30 @@
     <style name="editTextStyle">
         <item name="android:textSize">14sp</item>
         <item name="android:letterSpacing">-0.02</item>
+        <item name="android:color">@color/violet</item>
         <item name="fontFamily">@font/inter</item>
+    </style>
+
+    <style name="TextInputEditTextLayout">
+        <item name="android:textColor">@color/button_text_white</item>
+        <item name="android:textColorHint">@color/color_share</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">@color/mtrl_textinput_active_box_stroke_color</item>
+        <item name="android:strokeColor">@color/mtrl_textinput_default_box_stroke_color</item>
+        <item name="counterTextColor">@color/color_share</item>
+        <item name="hintTextColor">@color/violet</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+
+    <style name="CounterText" parent="TextAppearance.Design.Counter">
+        <item name="counterTextColor">@color/violet</item>
+    </style>
+
+    <style name="CounterOverFlow" parent="TextAppearance.Design.Counter.Overflow">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/violet</item>
     </style>
 
     <style name="Switch" parent="TextAppearance.AppCompat.Widget.Switch">
@@ -84,4 +107,5 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">4dp</item>
     </style>
+
 </resources>

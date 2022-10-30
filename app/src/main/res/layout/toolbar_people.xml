@@ -5,7 +5,7 @@
     android:id="@+id/toolbar_people"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/grey"
+
     app:menu="@menu/top_app_bar_people"
     app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
     app:titleTextAppearance="@style/toolbar_text"

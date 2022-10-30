@@ -1,23 +1,22 @@
 package com.account.accountfigma.presentation.viewmodels
 
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.account.accountfigma.data.UserListRepositoryImpl
+import androidx.lifecycle.viewModelScope
 import com.account.accountfigma.domain.model.User
+import com.account.accountfigma.domain.usecases.EditUserUseCase
 import com.account.accountfigma.domain.usecases.GetUserListUseCase
+import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class ListViewModel : ViewModel() {
-    private val repository = UserListRepositoryImpl()
-    private val getUsers = GetUserListUseCase(repository)
+class ListViewModel @Inject constructor(
+    private val editUserUseCase: EditUserUseCase,
+    private val getUserListUseCase: GetUserListUseCase
+) : ViewModel() {
 
-    var userList: MutableLiveData<List<User>> = MutableLiveData()
+    val userList = getUserListUseCase()
 
-    fun getUserList() {
-        userList.value = getUsers()
-    }
-    // не меняется состояние
-    fun changeEnableState(user: User){
-        val newUser = user.copy(enabled = !user.enabled)
-        repository.editUser(newUser)
+    fun changeEnableState(user: User) {
+        val newItem = user.copy(subscribed = !user.subscribed)
+        editUserUseCase.invoke(newItem)
     }
 }

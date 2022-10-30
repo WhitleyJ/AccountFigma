@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black_500"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".presentation.fragments.PeopleFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/grey">
 
         <include android:id="@+id/toolbar_user"
             layout="@layout/toolbar_people" />
