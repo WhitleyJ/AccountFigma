@@ -16,4 +16,6 @@
     <string name="chronicles">Chronicles</string>
     <string name="_50_300">50/300</string>
     <string name="quote">Жизнь будет гораздо проще и приятнее для каждого человека, если мы будем</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

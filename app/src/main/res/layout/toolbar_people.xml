@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_people"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    app:menu="@menu/top_app_bar_people"
+    app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+    app:titleTextAppearance="@style/toolbar_text"
+    app:title="@string/people"
+    app:titleTextColor="@color/button_text_white"
+    tools:showIn="@layout/activity_main" />
