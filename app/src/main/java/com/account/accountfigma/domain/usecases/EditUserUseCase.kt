@@ -6,7 +6,7 @@ import javax.inject.Inject
 
 class EditUserUseCase @Inject constructor(private val repository: UserRepository) {
 
-    operator fun invoke(user: User) {
+    fun editUsers (user: User) {
         repository.editUser(user)
     }
 }

@@ -10,15 +10,16 @@
         android:name="com.account.accountfigma.presentation.fragments.AccountFragment"
         tools:layout="@layout/fragment_account">
         <action
-            android:id="@+id/action_accountFragment_to_peopleFragment"
-            app:destination="@id/peopleFragment" />
+            android:id="@+id/action_accountFragment_to_rootFragment"
+            app:destination="@id/rootFragment" />
     </fragment>
     <fragment
-        android:id="@+id/peopleFragment"
-        android:name="com.account.accountfigma.presentation.fragments.PeopleFragment"
-        tools:layout="@layout/fragment_people" >
+        android:id="@+id/rootFragment"
+        android:name="com.account.accountfigma.presentation.fragments.RootFragment"
+        android:label="fragment_root"
+        tools:layout="@layout/fragment_root" >
         <action
-            android:id="@+id/action_peopleFragment_to_accountFragment"
+            android:id="@+id/action_rootFragment_to_accountFragment"
             app:destination="@id/accountFragment" />
     </fragment>
 </navigation>

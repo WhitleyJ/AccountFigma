@@ -35,7 +35,7 @@
                 android:layout_width="@dimen/default_profile_size"
                 android:layout_height="@dimen/default_profile_size"
                 android:layout_marginTop="@dimen/default_margin"
-                android:src="@drawable/img"
+                android:src="@drawable/img_1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

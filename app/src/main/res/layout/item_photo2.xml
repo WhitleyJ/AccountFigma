@@ -6,11 +6,11 @@
 
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/image_item_rc"
+        android:id="@+id/image_item_rc_moments"
         android:layout_width="79dp"
         android:layout_height="140dp"
         android:paddingHorizontal="2dp"
-        android:src="@drawable/photo"
+        android:src="@drawable/img_1"
         android:scaleType="centerCrop"
         app:shapeAppearanceOverlay="@style/ImageCorners"
         app:layout_constraintBottom_toBottomOf="parent"

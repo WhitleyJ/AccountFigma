@@ -4,12 +4,14 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/violet</item>
         <item name="colorPrimaryVariant">@color/black_200</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/black_500</item>
         <item name="colorAccent">@color/violet</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/violet</item>
         <item name="colorSecondaryVariant">@color/white_60</item>
-        <item name="colorOnSecondary">@color/white_60</item>
+        //изменил с грей на шейр
+        <item name="colorOnSecondary">@color/color_share</item>
+        <item name="editTextColor">@color/color_share</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->

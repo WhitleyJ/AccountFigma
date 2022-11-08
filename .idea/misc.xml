@@ -25,8 +25,11 @@
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/font/inter_medium.xml" value="0.3453125" />
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/activity_main.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/activty.xml" value="0.1675438596491228" />
-        <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/fragment_account.xml" value="0.22" />
+        <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/fragment_account.xml" value="0.1860759493670886" />
+        <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/fragment_mutually.xml" value="0.1859375" />
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/fragment_people.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/fragment_root.xml" value="0.21242774566473988" />
+        <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/fragment_subscriptions.xml" value="0.2" />
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/item_chronicles.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/item_photo.xml" value="0.22" />
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/item_photo2.xml" value="0.6732142857142858" />
@@ -34,7 +37,7 @@
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/textinput.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/toolbar.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/toolbar_people.xml" value="0.15" />
-        <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/user_item.xml" value="0.22" />
+        <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/layout/user_item.xml" value="0.6" />
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/menu/nav_menu.xml" value="0.19635416666666666" />
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/menu/toolbar_people.xml" value="0.15" />
         <entry key="..\:/Users/shepe/AndroidStudioProjects/AccountFigma/app/src/main/res/menu/top_app_bar.xml" value="0.1" />

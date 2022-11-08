@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:backgroundTint="@color/black_500"
     app:cardCornerRadius="0dp"
     android:clickable="true"
@@ -16,7 +17,7 @@
         android:layout_marginStart="@dimen/default_margin"
         android:layout_marginTop="@dimen/margin_people_image"
         android:layout_marginBottom="@dimen/margin_people_image"
-        android:src="@drawable/img"/>
+        android:src="@drawable/img_1"/>
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/text_name"

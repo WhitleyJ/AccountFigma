@@ -1,10 +1,7 @@
 package com.account.accountfigma
 
 import android.app.Application
-import com.account.accountfigma.di.DaggerAppComponent
+import dagger.hilt.android.HiltAndroidApp
 
-class App : Application(){
-    val component by lazy{
-        DaggerAppComponent.builder().build()
-    }
-}
+@HiltAndroidApp
+class App : Application()

@@ -8,20 +8,20 @@ import com.github.javafaker.Faker
 import javax.inject.Inject
 import kotlin.random.Random
 
-class UserListRepositoryImpl @Inject constructor(listImages: ListImage) :
-    UserRepository {
+class UserListRepositoryImpl @Inject constructor(listImages: ListImage) : UserRepository {
 
     private val userListLD = MutableLiveData<List<User>>()
-    private val usersList = sortedSetOf<User>({ o1, o2 -> o1.id.compareTo(o2.id) })
-
+    private val usersList = sortedSetOf<User>({ o1, o2 -> o1.id compareTo (o2.id) })
     private var autoIncrementId = 0
 
     init {
         val faker = Faker.instance()
-        for (i in 0 until 100) {
+        for (i in 0 until 40) {
             listImages.imagesList.shuffle()
-            val user = User(name = faker.name().name().trimEnd(), subscribed = Random.nextBoolean(),
-                image = listImages.imagesList[i % listImages.imagesList.size])
+            val user =
+                User(name = faker.name().name().trimEnd(),
+                    image = listImages.imagesList[i % listImages.imagesList.size],
+                    subscribed = Random.nextBoolean())
             addUser(user)
         }
     }
@@ -31,9 +31,10 @@ class UserListRepositoryImpl @Inject constructor(listImages: ListImage) :
     }
 
     override fun getUser(userId: Int): User {
-        return usersList.find { it.id == userId }
-            ?: throw RuntimeException("Element with id $userId not found")
+        return (usersList.find { it.id == userId }
+            ?: throw RuntimeException("Element with id $userId not found"))
     }
+
 
     override fun editUser(user: User) {
         val oldElement = getUser(user.id)

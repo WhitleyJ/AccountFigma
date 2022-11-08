@@ -89,15 +89,6 @@
         <item name="fontFamily">@font/inter</item>
     </style>
 
-    <style name="CounterText" parent="TextAppearance.Design.Counter">
-        <item name="counterTextColor">@color/violet</item>
-    </style>
-
-    <style name="CounterOverFlow" parent="TextAppearance.Design.Counter.Overflow">
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/violet</item>
-    </style>
-
     <style name="Switch" parent="TextAppearance.AppCompat.Widget.Switch">
         <item name="thumbTint">@drawable/switch_custom_tumb</item>
         <item name="trackTint">@drawable/switch_custom_track</item>
@@ -108,4 +99,16 @@
         <item name="cornerSize">4dp</item>
     </style>
 
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:background">@color/grey</item>
+        <item name="tabTextAppearance">@style/tab_text_style</item>
+        <item name="tabSelectedTextColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="tab_text_style">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_share</item>
+        <item name="android:letterSpacing">-0.04</item>
+    </style>
 </resources>

@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="@color/black_500"
         app:shapeAppearanceOverlay="@style/ImageCorners"
-        app:srcCompat="@drawable/photo1" />
+        app:srcCompat="@drawable/img_1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

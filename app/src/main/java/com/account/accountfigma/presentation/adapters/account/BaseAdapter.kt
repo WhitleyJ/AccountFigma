@@ -1,10 +1,9 @@
-package com.account.accountfigma.presentation.adapters
+package com.account.accountfigma.presentation.adapters.account
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import javax.inject.Inject
 
 abstract class BaseAdapter(private val layout: Int, val list: List<*>) :
     RecyclerView.Adapter<BaseAdapter.ViewHolder>() {

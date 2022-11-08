@@ -1,4 +1,4 @@
-package com.account.accountfigma.presentation.adapters
+package com.account.accountfigma.presentation.adapters.account
 
 import com.account.accountfigma.R
 
