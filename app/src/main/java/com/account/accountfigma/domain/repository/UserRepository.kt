@@ -10,4 +10,5 @@ interface UserRepository {
     fun getUser(userId: Int): User
 
     fun editUser(user: User)
+
 }

@@ -1,4 +1,4 @@
-package com.account.accountfigma.presentation.fragments
+package com.account.accountfigma.presentation.fragments.account
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,14 +8,12 @@ import androidx.appcompat.content.res.AppCompatResources.getColorStateList
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.account.accountfigma.R
-import com.account.accountfigma.data.ListImage
 import com.account.accountfigma.databinding.FragmentAccountBinding
 import com.account.accountfigma.presentation.adapters.account.ChroniclesAdapter
 import com.account.accountfigma.presentation.adapters.account.MomentsAdapter
 import com.account.accountfigma.presentation.adapters.account.ProfileAdapter
-import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
+
 class AccountFragment : Fragment() {
 
     private val binding by lazy {

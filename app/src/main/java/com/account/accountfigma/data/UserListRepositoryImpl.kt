@@ -8,7 +8,7 @@ import com.github.javafaker.Faker
 import javax.inject.Inject
 import kotlin.random.Random
 
-class UserListRepositoryImpl @Inject constructor(listImages: ListImage) : UserRepository {
+class UserListRepositoryImpl @Inject constructor(listImage: ListImage): UserRepository {
 
     private val userListLD = MutableLiveData<List<User>>()
     private val usersList = sortedSetOf<User>({ o1, o2 -> o1.id compareTo (o2.id) })
@@ -16,11 +16,11 @@ class UserListRepositoryImpl @Inject constructor(listImages: ListImage) : UserRe
 
     init {
         val faker = Faker.instance()
-        for (i in 0 until 40) {
-            listImages.imagesList.shuffle()
+        for (i in 0 until 120) {
+            listImage.imagesList.shuffle()
             val user =
                 User(name = faker.name().name().trimEnd(),
-                    image = listImages.imagesList[i % listImages.imagesList.size],
+                    image = listImage.imagesList[i % listImage.imagesList.size],
                     subscribed = Random.nextBoolean())
             addUser(user)
         }

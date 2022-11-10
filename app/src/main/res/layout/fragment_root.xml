@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.fragments.RootFragment">
+    tools:context=".presentation.fragments.people.RootFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBar"
@@ -21,16 +21,17 @@
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
+            style="@style/MyCustomTabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lineSpacingExtra="-1sp"
-            style="@style/MyCustomTabLayout"
-            app:tabMode="fixed"
-            app:tabInlineLabel="true"
             android:elevation="0dp"
+            android:lineSpacingExtra="-1sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar_user" />
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_user"
+            app:tabInlineLabel="true"
+            app:tabMode="fixed" />
+
 
     </com.google.android.material.appbar.AppBarLayout>
 

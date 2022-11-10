@@ -1,27 +1,31 @@
-package com.account.accountfigma.presentation.fragments
+package com.account.accountfigma.presentation.fragments.people
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import com.account.accountfigma.databinding.FragmentPeopleBinding
-import com.account.accountfigma.presentation.adapters.PeopleAdapter
+import androidx.fragment.app.activityViewModels
+import com.account.accountfigma.databinding.FragmentMutuallyBinding
+import com.account.accountfigma.presentation.adapters.people.PeopleAdapter
 import com.account.accountfigma.presentation.viewmodels.ListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class PeopleFragment : Fragment() {
+class MutuallyFragment: Fragment() {
 
-    private lateinit var adapterUser: PeopleAdapter
+    lateinit var adapterMutually: PeopleAdapter
 
     private val binding by lazy {
-        FragmentPeopleBinding.inflate(layoutInflater)
+        FragmentMutuallyBinding.inflate(layoutInflater)
     }
 
-    private val viewModel: ListViewModel by viewModels()
+    private val viewModel: ListViewModel by activityViewModels()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,9 +40,9 @@ class PeopleFragment : Fragment() {
     }
 
     private fun initRecyclerView() {
-        adapterUser = PeopleAdapter()
-        binding.recyclerPeople.apply {
-            adapter = adapterUser
+        adapterMutually = PeopleAdapter()
+        binding.recyclerMutually.apply {
+            adapter = adapterMutually
         }
         initViewModel()
     }
@@ -46,11 +50,15 @@ class PeopleFragment : Fragment() {
     private fun initViewModel() {
 
         with(viewModel) {
-            adapterUser.onClick = {
+            adapterMutually.onClick = {
                 viewModel.changeEnableState(it)
             }
             userList.observe(viewLifecycleOwner) {
-                adapterUser.submitList(it)
+                adapterMutually.modifyList(it)
+
+            }
+            getQuery().observe(viewLifecycleOwner) {
+                adapterMutually.filter(it)
             }
         }
     }

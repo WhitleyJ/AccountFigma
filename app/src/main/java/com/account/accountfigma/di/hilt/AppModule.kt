@@ -1,21 +1,18 @@
-package com.account.accountfigma.di
+package com.account.accountfigma.di.hilt
 
 import com.account.accountfigma.data.UserListRepositoryImpl
 import com.account.accountfigma.domain.repository.UserRepository
+import dagger.Binds
 import dagger.Module
-import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-@InstallIn(SingletonComponent::class)
 @Module
-object AppModule {
+@InstallIn(SingletonComponent::class)
+interface AppModule {
+
     @Singleton
-    @Provides
-    fun bindRepository(impl: UserListRepositoryImpl): UserRepository {
-        return impl
-    }
-
-
+    @Binds
+    fun bindRepository(impl: UserListRepositoryImpl): UserRepository
 }

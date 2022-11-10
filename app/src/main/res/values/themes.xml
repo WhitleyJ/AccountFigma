@@ -9,6 +9,7 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/violet</item>
         <item name="colorSecondaryVariant">@color/white_60</item>
+        <item name="searchViewStyle">@style/AppTheme.SearchView</item>
         //изменил с грей на шейр
         <item name="colorOnSecondary">@color/color_share</item>
         <item name="editTextColor">@color/color_share</item>

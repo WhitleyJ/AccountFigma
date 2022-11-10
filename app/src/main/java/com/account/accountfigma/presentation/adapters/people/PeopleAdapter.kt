@@ -1,9 +1,7 @@
-package com.account.accountfigma.presentation.adapters
+package com.account.accountfigma.presentation.adapters.people
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Filter
-import android.widget.Filterable
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -11,10 +9,14 @@ import com.account.accountfigma.R
 import com.account.accountfigma.databinding.UserItemBinding
 import com.account.accountfigma.domain.model.User
 import com.bumptech.glide.Glide
+import java.util.*
 
 class PeopleAdapter : ListAdapter<User, PeopleAdapter.PeopleViewHolder>(ItemDiffCallBack()) {
 
     var onClick: ((User) -> Unit)? = null
+
+
+    private var unfilteredlist = listOf<User>()
 
     class PeopleViewHolder(val binding: UserItemBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -49,27 +51,31 @@ class PeopleAdapter : ListAdapter<User, PeopleAdapter.PeopleViewHolder>(ItemDiff
             subscribesBtn.setTextColor(ContextCompat.getColor(root.context, R.color.color_share))
         }
     }
+
+    fun modifyList(list: List<User>) {
+        unfilteredlist = list
+        submitList(list)
+    }
+
+    //работает
+    fun filter(query: CharSequence?) {
+        val list = mutableListOf<User>()
+
+        if (!query.isNullOrEmpty()) {
+            list.addAll(unfilteredlist.filter {
+                it.name.toLowerCase(Locale.getDefault()).contains(query.toString().toLowerCase(Locale.getDefault())) ||
+                        it.name.toLowerCase(Locale.getDefault()).contains(query.toString().toLowerCase(Locale.getDefault())) })
+        } else {
+            list.addAll(unfilteredlist)
+        }
+        submitList(list)
+    }
+
     companion object {
         private const val SUBSCRIBE = "Subscribe"
         private const val UNSUBSCRIBE = "Unsubscribe"
     }
 
-//    override fun getFilter(): Filter {
-//        return object: Filter(){
-//            override fun performFiltering(p0: CharSequence?): FilterResults {
-//                for (item in currentList){
-//                    if(item.name.contains()){
-//                        currentList
-//                    }
-//                }
-//            }
-//
-//            override fun publishResults(p0: CharSequence?, p1: FilterResults?) {
-//                TODO("Not yet implemented")
-//            }
-//
-//        }
-//    }
 }
 
 

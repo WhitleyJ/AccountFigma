@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="toolbar_text">
+    <style name="toolbar_text" parent="Widget.AppCompat.SearchView">
         <item name="fontFamily">@font/inter_medium</item>
         <item name="android:textColor">@color/button_text_white</item>
         <item name="android:letterSpacing">-0.03</item>
         <item name="android:textSize">18sp</item>
         <item name="android:text">@string/id_123_456_789</item>
+    </style>
+
+    <style name="AppTheme.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:searchHintIcon">@color/color_share</item>
+        <item name="hintTextColor">@color/color_share</item>
+        <item name="fontFamily">@font/inter</item>
+        <item name="editTextColor">@color/white_60</item>
+        <item name="android:textColor">@color/white_60</item>
+        <item name="android:tint">@color/color_share</item>
+        <item name="android:textSize">12sp</item>
+        <item name="iconifiedByDefault">false</item>
     </style>
 
     <style name="textViewRating">

@@ -5,3 +5,14 @@ import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
 class App : Application()
+
+
+
+
+
+
+//Dagger
+//    val component by lazy {
+//        DaggerAppComponent.builder().build()
+//    }
+//}

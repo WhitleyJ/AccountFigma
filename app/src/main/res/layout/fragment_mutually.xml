@@ -4,14 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black_500"
-    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".presentation.fragments.people.PeopleFragment">
+    tools:context=".presentation.fragments.people.MutuallyFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_people"
+        android:id="@+id/recycler_mutually"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="vertical"
         tools:listitem="@layout/user_item"/>
